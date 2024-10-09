@@ -1,0 +1,313 @@
+body {
+  background-image: url(../Multimedia/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*videos*/
+video {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header {
+  background-image: linear-gradient(to right, #e9ebe9, #64cd7d);
+  height: 80px;
+  display: flex;
+  position: sticky;
+  top: 1px;
+  justify-content: space-between;
+  z-index: 2;
+  align-items: center;
+}
+header #logo {
+  display: flex;
+  height: 80px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+header h1 {
+  text-align: center;
+  display: inline;
+  align-self: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+header nav {
+  display: inline;
+  align-self: center;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav a:hover {
+  color: green;
+  background-color: antiquewhite;
+  margin: 0.5em;
+}
+header nav a:visited {
+  color: purple;
+}
+.anuncio {
+  background: rgb(250, 244, 149);
+  background: radial-gradient(circle, rgb(250, 244, 149) 8%, rgba(255, 230, 0, 0.8887985614) 100%);
+}
+.anuncio p {
+  padding: 20px;
+  font-family: arial;
+  text-align: center;
+}
+.anuncio:hover {
+  animation-name: aparecer;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+/*redes, mapa*/
+h5 {
+  background-color: #5f9ea0;
+}
+
+/*cursos*/
+h4 {
+  color: black;
+  background-color: #5f9ea0;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 8em;
+  font-size: 10px;
+}
+
+/*portada*/
+h2 {
+  color: blanchedalmond;
+  background-color: #96c8a2;
+  text-align: center;
+  position: absolute;
+  top: 2em;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  text-align: center;
+  color: #5f9ea0;
+  font-size: 2em;
+}
+
+/*presentacion*/
+.col {
+  margin: 2rem 1rem;
+}
+.col img {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  transform: rotate(-5deg);
+}
+
+/*cursos*/
+.todos-los-cursos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.todos-los-cursos .cursos {
+  width: 24%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transition: transform 0.5s;
+}
+.todos-los-cursos .cursos:hover {
+  transform: scale(1.05);
+  box-shadow: 11px 9px 5px 0px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 11px 9px 5px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 11px 9px 5px 0px rgba(0, 0, 0, 0.18);
+}
+
+/*wsp*/
+#wsp {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 100px;
+  transition: transform 0.5s;
+  z-index: 1;
+}
+#wsp:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+  float: left;
+  width: 50%;
+  height: 25%;
+  margin: 20px;
+  transition: transform 0.5s;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .card-title {
+  color: white;
+}
+.card button {
+  background-color: rgb(223, 223, 189);
+  padding: 1em;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.card mb-3 {
+  max-width: 540px;
+}
+
+/*footer*/
+footer {
+  background-color: #5f9ea0;
+  padding: 1em;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/*mapa*/
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/*formulario*/
+form {
+  justify-content: center;
+}
+form label {
+  font-size: large;
+  padding-left: 20%;
+  padding-right: 1%;
+  padding-top: 10%;
+}
+form select {
+  margin: 10px 20px;
+}
+form:focus {
+  background-color: #bdecb6;
+}
+form input {
+  border: 0px;
+  padding: 9px;
+}
+form input:focus {
+  background-color: #bdecb6;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 1em 5em;
+  margin-bottom: 2em;
+  background-color: rgb(133, 228, 133);
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+button:hover {
+  transform: scale(1.06);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.enviar {
+  background-color: rgb(125, 125, 125);
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  main video {
+    width: 85%;
+  }
+  main h2 {
+    width: 80%;
+  }
+  header {
+    display: flex;
+    width: 100%;
+  }
+  header nav {
+    width: 100px;
+  }
+  .col img {
+    margin-left: 1%;
+    width: 17rem;
+  }
+  .col-2 {
+    width: 10rem;
+  }
+  #wsp {
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+    width: 10%;
+    z-index: 1;
+  }
+  h3 {
+    width: 100%;
+  }
+  .anuncio {
+    width: 100%;
+  }
+  .anuncio p {
+    padding: 1em;
+  }
+  .todos-los-cursos {
+    width: 90%;
+  }
+  .todos-los-cursos .cursos {
+    width: 10rem;
+  }
+  .info {
+    margin-left: 0%;
+  }
+  h5 {
+    width: 100%;
+  }
+  .mapa {
+    width: 70%;
+  }
+  .card {
+    width: 80%;
+    margin-left: 2%;
+  }
+  form label {
+    font-size: medium;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 10%;
+  }
+  form select {
+    margin: 1%;
+  }
+}
+
